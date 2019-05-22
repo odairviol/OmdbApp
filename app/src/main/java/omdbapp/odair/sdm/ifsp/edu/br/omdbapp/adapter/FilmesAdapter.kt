@@ -8,7 +8,6 @@ import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.layout_listar_filmes_adapter.view.*
 import omdbapp.odair.sdm.ifsp.edu.br.omdbapp.DetalheActivity
 import omdbapp.odair.sdm.ifsp.edu.br.omdbapp.R
-import omdbapp.odair.sdm.ifsp.edu.br.omdbapp.inflate
 import omdbapp.odair.sdm.ifsp.edu.br.omdbapp.dto.FilmeDTO
 
 class FilmesAdapter(private val lista: List<FilmeDTO>) : RecyclerView.Adapter<FilmeHolder>(), View.OnClickListener {
