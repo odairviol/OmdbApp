@@ -98,7 +98,8 @@ class PesquisaFragment : Fragment() {
         omdbApi.getFilmes(titulo).enqueue(
             object : Callback<ResultadoDTO> {
                 override fun onFailure(call: Call<ResultadoDTO>, t: Throwable) {
-                    activity?.mainContent?.snackbar("Erro: " + t.message)
+                    activity?.mainContent
+                            ?.snackbar("Erro: " + t.message)
                 }
                 override fun onResponse(call: Call<ResultadoDTO>, response: Response<ResultadoDTO>) {
                     val body = response.body()

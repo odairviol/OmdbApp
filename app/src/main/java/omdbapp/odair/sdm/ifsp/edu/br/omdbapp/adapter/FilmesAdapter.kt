@@ -9,6 +9,7 @@ import kotlinx.android.synthetic.main.layout_listar_filmes_adapter.view.*
 import omdbapp.odair.sdm.ifsp.edu.br.omdbapp.DetalheActivity
 import omdbapp.odair.sdm.ifsp.edu.br.omdbapp.R
 import omdbapp.odair.sdm.ifsp.edu.br.omdbapp.dto.FilmeDTO
+import omdbapp.odair.sdm.ifsp.edu.br.omdbapp.util.inflate
 
 class FilmesAdapter(private val lista: List<FilmeDTO>) : RecyclerView.Adapter<FilmeHolder>(), View.OnClickListener {
 
